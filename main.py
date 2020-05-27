@@ -39,7 +39,6 @@ if __name__ == "__main__":
     Locust_file = r'{}'.format(str((base / "../Locust_files/locustfile.py").resolve()))
     result_file = r'{}'.format(str((base / "../Data/CSV/testoutput").resolve()))
     Aggregate_file = r'{}'.format(str((base / "../Data/CSV/Aggregate_Result.csv").resolve()))
-    print('Lfile:',Locust_file,'rfile:',result_file,'Afile:',Aggregate_file)
     data = Run_test(Locust_file=Locust_file, ARGS=ARGS, result_file=result_file)
     df = pd.DataFrame(data)
     df.to_csv(r'{}'.format(Aggregate_file), index=False)
