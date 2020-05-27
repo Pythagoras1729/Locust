@@ -40,7 +40,7 @@ pipeline{
     }//end of stages
     post{
         success{
-                archiveArtifacts '*/*/*/*.csv'
+                archiveArtifacts '*/*/*.csv'
         }//end of success
     }//end of post
 }//end of pipeine
