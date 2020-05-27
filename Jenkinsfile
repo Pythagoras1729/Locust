@@ -22,7 +22,7 @@ pipeline{
             steps{
                 script{
                     println("Test starts")
-                        def cmd= "python  Locust/main.py \
+                        def cmd= "python  main.py \
                                        -No_of_Users ${NO_OF_USERS} \
                                        -Hatch_Rate ${HATCH_RATE}   \
                                        -E2e_50_threshold ${E2E_50_THRESHOLD} \
