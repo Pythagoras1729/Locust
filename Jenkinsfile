@@ -8,7 +8,7 @@ pipeline{
         string(name: 'E2E_99_THRESHOLD', defaultValue: '0', description: 'e2e .99 threshold ms')
         string(name: 'SERVER', defaultValue: '', description: 'Name ofServer we want to test')
         string(name: 'API_METHOD', defaultValue:'', description:'(GET, PUT, POST)')
-        string(name: 'RUN_TIME', defautValue:'',description:'Write X-hours Y-minutes Z-seconds as XhYmZs')
+        string(name: 'RUN_TIME', defaultValue:'',description:'Write X-hours Y-minutes Z-seconds as XhYmZs')
     }
     stages{
         stage('Set Environment'){
