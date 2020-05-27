@@ -1,0 +1,2 @@
+URL,Method,Success Rate,e2e_0.50(ms),e2e_0.90(ms),e2e_0.99(ms),Bottle Neck,Test Runtime,Requests sent,response_codes(client exptd_response_count)
+https://www.jntuk.edu.in,GET,24.0%,60000,75000,97000,Yes,120s,1102,"{ 200 : 264 }, { 504 : 658 }, { 502 : 180 }"
